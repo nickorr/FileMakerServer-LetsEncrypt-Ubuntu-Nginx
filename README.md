@@ -26,6 +26,6 @@ A bash script for fetching and renewing Let's Encrypt (certbot) certificates for
 
 ##TODO
 
-Add instructions for automating
-Some error checking would be nice
+Add instructions for automating.
+Some error checking would be nice.
 Needs to have a secure way of storing the admin account details.
