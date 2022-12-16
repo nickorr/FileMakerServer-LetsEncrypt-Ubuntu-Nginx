@@ -21,4 +21,5 @@ A bash script for fetching and renewing Let's Encrypt (certbot) certificates for
 ### Restart FM service
 
 `sudo service fmshelper stop`
+
 `sudo service fmshelper start`
