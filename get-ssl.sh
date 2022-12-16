@@ -34,6 +34,8 @@ certbot certonly --webroot -w "$WEB_ROOT" -d $DOMAIN --agree-tos -m "$EMAIL" --p
 cp "/etc/letsencrypt/live/${DOMAIN}/fullchain.pem" "${SERVER_PATH}CStore/fullchain.pem"
 cp "/etc/letsencrypt/live/${DOMAIN}/privkey.pem" "${SERVER_PATH}CStore/privkey.pem"
 
+chown -R fmserver:fmsadmin "${SERVER_PATH}CStore/"
+
 chmod 640 "${SERVER_PATH}CStore/privkey.pem"
 
 # Move an old certificate, if there is one, to prevent an error
