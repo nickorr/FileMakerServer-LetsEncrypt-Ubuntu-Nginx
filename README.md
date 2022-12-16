@@ -18,16 +18,7 @@ A bash script for fetching and renewing Let's Encrypt (certbot) certificates for
 3. edit content of script `vi ./renew-cert.sh` (only fms usr/pwd edit needed)
 4. run `sudo ./renew-cert.sh`
 
-### Restarting FMS
+### Restart FM service
 
-# Stop FM service
-
-sudo service fmshelper stop
-
-# Start FM service
-
-sudo service fmshelper start
-
-```
-
-```
+`sudo service fmshelper stop`
+`sudo service fmshelper start`
