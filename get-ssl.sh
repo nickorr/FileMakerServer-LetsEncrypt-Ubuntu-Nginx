@@ -25,7 +25,7 @@ FMPASS="fmConsolePassword"
 # --- you shouldn't need to edit anything below this line
 #
 
-WEB_ROOT="${SERVER_PATH}HTTPServer/htdocs"
+WEB_ROOT="${SERVER_PATH}NginxServer/htdocs"
 
 
 # Get the certificate
