@@ -24,7 +24,7 @@ A bash script for fetching and renewing Let's Encrypt (certbot) certificates for
 
 `sudo service fmshelper start`
 
-##TODO
+## TODO
 
 Add instructions for automating.
 Some error checking would be nice.
