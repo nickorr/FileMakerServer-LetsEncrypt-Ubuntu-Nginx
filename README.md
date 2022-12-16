@@ -1,10 +1,10 @@
 # FileMakerServer-LetsEncrypt-Ubuntu-Nginx
 
-A bash script for fetching and renewing Let's Encrypt (certbot) certificates for FileMaker Server running Linux (Ubuntu 20).
+A bash script for fetching and renewing Let's Encrypt (certbot) certificates for FileMaker Server running nginx on Ubuntu 20.
 
 ### Initial Setup Instructions:
 
-1. Setup Ubuntu + install FMS (as of now, its 19.2.1-23)
+1. Setup Ubuntu + install FMS (must be 19.5.1 or later for nginx)
 2. Install `sudo apt install certbot`
 3. download `wget https://raw.githubusercontent.com/nickorr/FileMakerServer-LetsEncrypt-Ubuntu-Nginx/main/get-ssl.sh`
 4. add execution `chmod +x ./get-ssl.sh`
@@ -13,7 +13,7 @@ A bash script for fetching and renewing Let's Encrypt (certbot) certificates for
 
 ### Renewal Setup Instructions:
 
-1. download `https://raw.githubusercontent.com/nickorr/FileMakerServer-LetsEncrypt-Ubuntu-Nginx/main/get-ssl.sh`
+1. download `wget https://raw.githubusercontent.com/nickorr/FileMakerServer-LetsEncrypt-Ubuntu-Nginx/main/get-ssl.sh`
 2. add execution `chmod +x ./renew-cert.sh`
 3. edit content of script `vi ./renew-cert.sh` (only fms usr/pwd edit needed)
 4. run `sudo ./renew-cert.sh`
